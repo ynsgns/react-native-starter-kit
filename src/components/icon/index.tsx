@@ -1,6 +1,6 @@
 import React from 'react'
 import {IconProps} from './types'
-import {StyleSheet, View} from 'react-native'
+import {StyleSheet, TouchableOpacity} from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Entypo from 'react-native-vector-icons/Entypo'
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
@@ -20,6 +20,7 @@ function Icon(props: IconProps) {
   const {
     iconType,
     name,
+    onPress,
     isCircle = false,
     size = 14,
     color = colors.black,
@@ -95,9 +96,12 @@ function Icon(props: IconProps) {
   })
 
   return (
-    <View style={isCircle ? styles.container_circle : styles.container}>
+    <TouchableOpacity
+      onPress={onPress}
+      disabled={!onPress}
+      style={isCircle ? styles.container_circle : styles.container}>
       {renderIcon()}
-    </View>
+    </TouchableOpacity>
   )
 }
 
