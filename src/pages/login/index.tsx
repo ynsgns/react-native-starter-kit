@@ -1,11 +1,12 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View} from 'react-native'
+import {Input} from '../../components'
 import styles from './styles'
 
 function LoginScreen() {
   return (
     <View style={styles.container}>
-      <Text>Login Screen</Text>
+      <Input label="Name or Username" />
     </View>
   )
 }
