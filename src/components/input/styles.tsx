@@ -3,7 +3,7 @@ import {colors, numbers} from '../../assets'
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    // paddingHorizontal: 20,
   },
   label: {
     color: colors.grey,
@@ -11,8 +11,7 @@ const styles = StyleSheet.create({
   input: {
     borderBottomWidth: 1,
     borderBottomColor: colors.greySoft,
-    padding: numbers.padding.md,
-    width: '100%',
+    paddingVertical: numbers.padding.md,
   },
 })
 
