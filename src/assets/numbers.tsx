@@ -14,6 +14,14 @@ const numbers = {
     l: 12,
     xl: 16,
   },
+  icon: {
+    xs: 10,
+    s: 12,
+    md: 14,
+    l: 16,
+    xl: 20,
+    xxl: 28,
+  },
 }
 
 export default numbers

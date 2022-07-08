@@ -1,12 +1,19 @@
 import React from 'react'
 import {View} from 'react-native'
-import {Input} from '../../components'
+import {numbers} from '../../assets'
+import {Icon, Input} from '../../components'
 import styles from './styles'
 
-function LoginScreen() {
+function LoginScreen(): JSX.Element {
   return (
     <View style={styles.container}>
       <Input label="Name or Username" />
+      <Icon
+        iconType="Entypo"
+        name="arrow-right"
+        size={numbers.icon.xxl}
+        isCircle
+      />
     </View>
   )
 }
