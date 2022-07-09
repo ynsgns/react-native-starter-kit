@@ -32,6 +32,10 @@ const styles = StyleSheet.create({
   userName: {
     marginTop: 48,
   },
+  flex7: {flex: 7, alignItems: 'center'},
+  marginTop12: {
+    marginTop: 12,
+  },
 })
 
 export default styles

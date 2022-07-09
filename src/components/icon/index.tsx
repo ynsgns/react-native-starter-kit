@@ -21,18 +21,20 @@ function Icon(props: IconProps) {
     iconType,
     name,
     onPress,
+    disabled,
     isCircle = false,
     size = 14,
     color = colors.black,
     borderColor = colors.grey,
   } = props || {}
+  const disable = disabled || !onPress
 
   const renderIcon = (): React.ReactElement | null => {
     let returnComp: React.ReactElement | null = null
     const commonProps = {
       name,
       size,
-      color,
+      color: disable ? colors.grey : color,
     }
     switch (iconType) {
       case 'AntDesign':
@@ -98,7 +100,7 @@ function Icon(props: IconProps) {
   return (
     <TouchableOpacity
       onPress={onPress}
-      disabled={!onPress}
+      disabled={disable}
       style={isCircle ? styles.container_circle : styles.container}>
       {renderIcon()}
     </TouchableOpacity>

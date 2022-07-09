@@ -10,9 +10,11 @@ function Label(props: LabelProps) {
     fontWeight = 'normal',
     size = 14,
     isWhite = false,
+    isError = false,
     color,
   } = props || {}
-  const textColor = color || isWhite ? colors.white : colors.black
+  const textColor =
+    color || isError ? colors.error : isWhite ? colors.white : colors.black
 
   return (
     <View style={containerStyle || {}}>

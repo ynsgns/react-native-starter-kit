@@ -8,5 +8,6 @@ const colors = {
   grey_dark2: '#393E46',
   cyan: '#00ADB5',
   bg: '#EEEEEE',
+  error: 'red',
 }
 export default colors

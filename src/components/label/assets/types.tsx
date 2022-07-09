@@ -18,5 +18,6 @@ export type LabelProps = {
     | undefined
   color?: string
   size?: number
+  isError?: boolean
   isWhite?: boolean
 } & TextProps
