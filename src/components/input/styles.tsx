@@ -8,9 +8,18 @@ const styles = StyleSheet.create({
   label: {
     color: colors.grey,
   },
+  label_white: {
+    color: colors.white,
+  },
   input: {
     borderBottomWidth: 1,
     borderBottomColor: colors.greySoft,
+    paddingVertical: numbers.padding.md,
+  },
+  input_white: {
+    borderBottomWidth: 1,
+    borderBottomColor: colors.white,
+    color: colors.white,
     paddingVertical: numbers.padding.md,
   },
 })

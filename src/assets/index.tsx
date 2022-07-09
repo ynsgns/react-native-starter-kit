@@ -1,4 +1,4 @@
 import colors from './colors'
 import numbers from './numbers'
-
-export {colors, numbers}
+import commonStyle from './commonStyle'
+export {colors, numbers, commonStyle}
