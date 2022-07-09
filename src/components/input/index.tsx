@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {Text, TextInput, View} from 'react-native'
 import {colors} from '../../assets'
-import styles from './styles'
-import {InputProps} from './types'
+import styles from './assets/styles'
+import {InputProps} from './assets/types'
 
 function Input(props: InputProps) {
   const {

@@ -1,5 +1,5 @@
 import React from 'react'
-import {IconProps} from './types'
+import {IconProps} from './assets/types'
 import {StyleSheet, TouchableOpacity} from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Entypo from 'react-native-vector-icons/Entypo'

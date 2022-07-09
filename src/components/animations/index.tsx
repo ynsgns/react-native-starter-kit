@@ -1,4 +1,3 @@
-import FadeInView from './fadeIn'
-import FadeOutView from './fadeOut'
+import FadeInView from './lib/fadeIn'
 
-export {FadeOutView, FadeInView}
+export {FadeInView}

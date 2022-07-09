@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native'
-import {colors, commonStyle} from '../../assets'
+import {colors, commonStyle} from '../../../assets'
 
 const styles = StyleSheet.create({
   headerView: {

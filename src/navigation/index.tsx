@@ -4,17 +4,19 @@ import * as React from 'react'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import LoginScreen from '../pages/login'
+import WelcomeScreen from '../pages/welcome'
 
-const Stack = createNativeStackNavigator()
+const AppStack = createNativeStackNavigator()
 
 function App() {
   return (
-    <Stack.Navigator
+    <AppStack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Login" component={LoginScreen} />
-    </Stack.Navigator>
+      <AppStack.Screen name="Login" component={LoginScreen} />
+      <AppStack.Screen name="Wellcome" component={WelcomeScreen} />
+    </AppStack.Navigator>
   )
 }
 

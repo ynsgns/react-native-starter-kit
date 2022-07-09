@@ -1,23 +1,32 @@
 import React, {useState} from 'react'
 import {ActivityIndicator, Text, TouchableOpacity, View} from 'react-native'
 import {numbers} from '../../assets'
-import {Container, Icon, Input, Label, Animations} from '../../components'
-import styles from './styles'
+import {
+  Container,
+  Icon,
+  Input,
+  Label,
+  Animations,
+  Loading,
+} from '../../components'
+import {LoginProps} from './assets/types'
+import styles from './assets/styles'
 
 const headerViewH = numbers.screen.height * 0.69
 
-function LoginScreen(): JSX.Element {
+function LoginScreen({navigation}: LoginProps): JSX.Element {
   const [loginStatu, setLoginStatu] = useState<'u' | 'p'>('u')
   const [username, setUsername] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [headerViewHeight, setHeaderViewHeight] = useState<number>(headerViewH)
   const [loading, setLoading] = useState<boolean>(false)
+  const [pageLoading, setPageLoading] = useState<boolean>(true)
   const [hasError, setHasError] = useState<boolean>(false)
 
   const changeLoginStatu = () => {
-    if (loginStatu === 'u') {
+    if (loginStatu === 'u' && username.length > 0) {
       setLoginStatu('p')
-    } else {
+    } else if (password.length > 0) {
       setHeaderViewHeight(0)
       setLoading(true)
       setTimeout(() => {
@@ -25,9 +34,12 @@ function LoginScreen(): JSX.Element {
         setHasError(true)
         setLoading(false)
         setHeaderViewHeight(headerViewH)
-        setLoginStatu('u')
+        // setLoginStatu('u')
         setUsername('')
-      }, 3000)
+        setPassword('')
+
+        navigation.navigate('Wellcome')
+      }, 1500)
     }
   }
 
@@ -49,8 +61,14 @@ function LoginScreen(): JSX.Element {
 
   return (
     <Container>
+      <Loading
+        isShow={pageLoading}
+        onEndingLoadind={() => setPageLoading(false)}
+      />
       <View style={styles.flex7}>
-        <Animations.FadeInView toValue={headerViewHeight}>
+        <Animations.FadeInView
+          toValue={headerViewHeight}
+          duration={headerViewH}>
           <View style={styles.headerView}>
             <View style={styles.flex1_center}>
               <Label title="Wellcome My App" isWhite size={24} />
@@ -78,6 +96,7 @@ function LoginScreen(): JSX.Element {
                     label="Password"
                     secureTextEntry
                     maxLength={16}
+                    autoFocus
                     onSubmitEditing={changeLoginStatu}
                     onChangeText={onChangePassword}
                     value={password}
