@@ -3,7 +3,7 @@ import {colors, numbers} from '../../../assets'
 
 const styles = StyleSheet.create({
   container: {
-    // paddingHorizontal: 20,
+    marginBottom: numbers.padding.xl,
   },
   label: {
     color: colors.grey,

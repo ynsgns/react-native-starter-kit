@@ -10,9 +10,10 @@ function Input(props: InputProps) {
     inputStyle,
     containerStyle,
     onChangeText,
+    value,
     isWhite = false,
   } = props || {}
-  const [inputValue, setInputValue] = useState<string>('')
+  const [inputValue, setInputValue] = useState<string>(value || '')
   const _onChangeText = (evt: string) => {
     setInputValue(evt)
     if (onChangeText) {
@@ -22,7 +23,7 @@ function Input(props: InputProps) {
   return (
     <View style={[styles.container, containerStyle || {}]}>
       <Text style={isWhite ? styles.label_white : styles.label}>
-        {(inputValue && label && label) || ''}
+        {(inputValue && label && label) || ' '}
       </Text>
       <TextInput
         {...props}

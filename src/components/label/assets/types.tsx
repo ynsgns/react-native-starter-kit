@@ -20,4 +20,12 @@ export type LabelProps = {
   size?: number
   isError?: boolean
   isWhite?: boolean
+  center?: boolean
+  bold?: boolean
+  xs?: boolean
+  small?: boolean
+  md?: boolean
+  large?: boolean
+  xl?: boolean
+  xxl?: boolean
 } & TextProps

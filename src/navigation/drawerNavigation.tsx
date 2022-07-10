@@ -1,14 +1,14 @@
 import * as React from 'react'
 import {createDrawerNavigator} from '@react-navigation/drawer'
 
-import WelcomeScreen from '../pages/drawer/welcome'
+import FormScreen from '../pages/drawer/form'
 
 const Drawer = createDrawerNavigator()
 
 function DrawerNavigation() {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="WelcomeScreen" component={WelcomeScreen} />
+      <Drawer.Screen name="FormScreen" component={FormScreen} />
     </Drawer.Navigator>
   )
 }
