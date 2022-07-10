@@ -1,10 +1,12 @@
 # react-native-starter-kit
 
 Component List
-#Input
-#Icon with react-native-vector-icons
-#Container
-#Label
-#Panel
-#Animations
-#Loading
+<ul>
+<li>Input</li>
+<li>Icon with react-native-vector-icons</li>
+<li>Container</li>
+<li>Panel</li>
+<li>Label</li>
+<li>Animations</li>
+<li>Loading</li>
+
