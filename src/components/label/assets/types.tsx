@@ -1,7 +1,7 @@
 import {TextProps, ViewStyle} from 'react-native'
 
 export type LabelProps = {
-  title: string
+  title?: string
   containerStyle?: ViewStyle
   fontWeight?:
     | 'normal'

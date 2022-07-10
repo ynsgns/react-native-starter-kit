@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {View} from 'react-native'
 import {Container, Input, Loading, Panel} from '../../../components'
+import Button from '../../../components/button'
 import styles from './assets/styles'
 
 function WelcomeScreen(): JSX.Element {
@@ -16,6 +17,7 @@ function WelcomeScreen(): JSX.Element {
         <Panel title="Example form title">
           <Input label="Name" />
           <Input label="Surname" />
+          <Button title="Button" />
         </Panel>
       </View>
     </Container>
