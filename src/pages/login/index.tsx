@@ -38,7 +38,7 @@ function LoginScreen({navigation}: LoginProps): JSX.Element {
         setUsername('')
         setPassword('')
 
-        navigation.navigate('Wellcome')
+        navigation.navigate('DrawerNavigation')
       }, 1500)
     }
   }

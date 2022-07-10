@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {View} from 'react-native'
-import {Container, Label, Loading} from '../../components'
+import {Container, Label, Loading} from '../../../components'
 import styles from './assets/styles'
 
 function WelcomeScreen(): JSX.Element {

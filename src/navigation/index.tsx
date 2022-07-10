@@ -4,8 +4,7 @@ import * as React from 'react'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import LoginScreen from '../pages/login'
-import WelcomeScreen from '../pages/welcome'
-
+import DrawerNavigation from './drawerNavigation'
 const AppStack = createNativeStackNavigator()
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
         headerShown: false,
       }}>
       <AppStack.Screen name="Login" component={LoginScreen} />
-      <AppStack.Screen name="Wellcome" component={WelcomeScreen} />
+      <AppStack.Screen name="DrawerNavigation" component={DrawerNavigation} />
     </AppStack.Navigator>
   )
 }
