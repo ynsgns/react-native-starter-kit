@@ -20,10 +20,6 @@ export function useSwipe(onSwipeUp?: any, onSwipeDown?: any, rangeOffset = 4) {
     const range = windowWidth / rangeOffset
     const difference = positionY - firstTouch
 
-    console.log('positionY - firstTouch ', difference)
-    console.log('firstTouch', firstTouch)
-    console.log('positionY', positionY)
-
     // check if position is growing positively and has reached specified range
     if (positionY - firstTouch > range) {
       onSwipeDown && onSwipeDown(difference)

@@ -3,7 +3,7 @@ import {Modal, Pressable, Text, View} from 'react-native'
 import {numbers} from '../../assets'
 import styles from './assets/styles'
 import {BottomSheetProps} from './assets/types'
-import {useSwipe} from './useSwipe'
+import {useSwipe} from './lib/useSwipe'
 
 const topViewHeight = numbers.screen.height * 0.4
 const bottomViewHeight = numbers.screen.height * 0.6
