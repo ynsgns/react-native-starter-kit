@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import {Text, TextInput, View} from 'react-native'
+import {TextInput, View} from 'react-native'
 import {colors} from '../../assets'
+import Label from '../label'
 import styles from './assets/styles'
 import {InputProps} from './assets/types'
 
@@ -22,9 +23,12 @@ function Input(props: InputProps) {
   }
   return (
     <View style={[styles.container, containerStyle || {}]}>
-      <Text style={isWhite ? styles.label_white : styles.label}>
-        {(inputValue && label && label) || ' '}
-      </Text>
+      <Label
+        title={label || ' '}
+        style={isWhite ? styles.label_white : {}}
+        small
+      />
+
       <TextInput
         {...props}
         placeholder={label}

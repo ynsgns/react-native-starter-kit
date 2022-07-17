@@ -3,24 +3,23 @@ import {colors, numbers} from '../../../assets'
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: numbers.padding.xl,
-  },
-  label: {
-    color: colors.grey,
+    marginTop: numbers.padding.md,
   },
   label_white: {
     color: colors.white,
   },
   input: {
-    borderBottomWidth: 1,
-    borderBottomColor: colors.greySoft,
-    paddingVertical: numbers.padding.md,
+    borderWidth: 1,
+    borderColor: colors.greySoft,
+    padding: numbers.padding.l,
+    borderRadius: 4,
   },
   input_white: {
-    borderBottomWidth: 1,
-    borderBottomColor: colors.white,
+    borderWidth: 1,
+    borderColor: colors.white,
     color: colors.white,
-    paddingVertical: numbers.padding.md,
+    borderRadius: 4,
+    padding: numbers.padding.l,
   },
 })
 
