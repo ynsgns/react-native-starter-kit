@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 35,
   },
+  modalViewTop: {
+    width: numbers.screen.width,
+    alignItems: 'center',
+  },
   modalTopLine: {
     ...commonStyle.shadow,
     backgroundColor: colors.greySoft_2,
@@ -33,7 +37,7 @@ const styles = StyleSheet.create({
   modalTitle: {
     fontSize: numbers.fontSize.l,
     fontWeight: 'bold',
-    marginBottom: 15,
+    marginBottom: 20,
     textAlign: 'center',
   },
   content: {

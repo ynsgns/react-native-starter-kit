@@ -15,10 +15,11 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   input_white: {
-    borderBottomWidth: 1,
-    borderBottomColor: colors.white,
+    borderWidth: 1,
+    borderColor: colors.white,
     color: colors.white,
-    paddingVertical: numbers.padding.md,
+    borderRadius: 4,
+    padding: numbers.padding.l,
   },
 })
 

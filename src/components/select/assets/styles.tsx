@@ -25,6 +25,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-end',
   },
+  //
+  renderItem_container: {
+    padding: numbers.padding.md,
+    // backgroundColor: 'blue',
+  },
+  renderItem_button: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    // backgroundColor: 'red',
+  },
+  renderItem_lines: {
+    backgroundColor: colors.greySoft_2,
+    marginTop: numbers.padding.s,
+    width: '100%',
+    height: 1,
+  },
 })
 
 export default styles

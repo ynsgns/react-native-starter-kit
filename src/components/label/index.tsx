@@ -20,6 +20,7 @@ function Label(props: LabelProps) {
     large,
     xl,
     xxl,
+    style,
   } = props || {}
   const textColor =
     color || (isError ? colors.error : isWhite ? colors.white : colors.black)
@@ -48,12 +49,15 @@ function Label(props: LabelProps) {
   return (
     <View style={containerStyle || {}}>
       <Text
-        style={{
-          fontSize: getFontSize(),
-          color: textColor,
-          fontWeight: defaultFontWeight,
-          textAlign,
-        }}>
+        style={[
+          {
+            fontSize: getFontSize(),
+            color: textColor,
+            fontWeight: defaultFontWeight,
+            textAlign,
+          },
+          style,
+        ]}>
         {title}
       </Text>
     </View>

@@ -71,12 +71,16 @@ function BottomSheet({
           style={[
             styles.modalView,
             {height: bottomViewHeight, marginBottom: viewBottomMargin},
-          ]}
-          onTouchStart={onTouchStart}
-          onTouchMove={_onTouchMovie}
-          onTouchEnd={onTouchEnd}>
-          <View style={styles.modalTopLine} />
-          <Text style={styles.modalTitle}>{title || ''}</Text>
+          ]}>
+          <View
+            style={styles.modalViewTop}
+            onTouchStart={onTouchStart}
+            onTouchMove={_onTouchMovie}
+            onTouchEnd={onTouchEnd}>
+            <View style={styles.modalTopLine} />
+            <Text style={styles.modalTitle}>{title || ''}</Text>
+          </View>
+
           <View style={styles.content}>{children}</View>
         </View>
       </View>

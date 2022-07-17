@@ -21,11 +21,12 @@ function Icon(props: IconProps) {
     iconType,
     name,
     onPress,
-    disabled,
-    isCircle = false,
-    size = 14,
+    disabled = false,
     color = colors.black,
     borderColor = colors.grey,
+    size = 14,
+    marginRight = 0,
+    isCircle = false,
   } = props || {}
   const disable = disabled || !onPress
 
@@ -34,7 +35,7 @@ function Icon(props: IconProps) {
     const commonProps = {
       name,
       size,
-      color: disable ? colors.grey : color,
+      color: disabled ? colors.grey : color,
     }
     switch (iconType) {
       case 'AntDesign':
@@ -84,6 +85,7 @@ function Icon(props: IconProps) {
 
   const styles = StyleSheet.create({
     container: {
+      marginRight,
       padding: 0,
     },
     container_circle: {

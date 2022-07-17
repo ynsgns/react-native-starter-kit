@@ -4,7 +4,7 @@ import {colors, numbers} from '../../../assets'
 const styles = StyleSheet.create({
   scroll_container: {
     minHeight: numbers.screen.height,
-    paddingHorizontal: numbers.padding.xxl,
+    paddingHorizontal: numbers.padding.xl,
     backgroundColor: colors.bg,
   },
 })

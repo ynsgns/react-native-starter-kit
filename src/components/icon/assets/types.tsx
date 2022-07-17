@@ -17,6 +17,7 @@ export type IconProps = {
   color?: string
   borderColor?: string
   size?: number
+  marginRight?: number
   isCircle?: boolean
   disabled?: boolean
   onPress?: () => void
