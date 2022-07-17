@@ -5,20 +5,25 @@ const styles = StyleSheet.create({
   container: {
     marginTop: numbers.padding.md,
   },
-  label_white: {
-    color: colors.white,
-  },
-  input: {
+  button: {
     borderWidth: 1,
     borderColor: colors.greySoft,
     padding: numbers.padding.l,
     borderRadius: 4,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
-  input_white: {
-    borderBottomWidth: 1,
-    borderBottomColor: colors.white,
-    color: colors.white,
-    paddingVertical: numbers.padding.md,
+  label: {
+    color: colors.grey_dark,
+  },
+  leftView: {
+    flex: 8,
+    justifyContent: 'center',
+  },
+  rightView: {
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
   },
 })
 

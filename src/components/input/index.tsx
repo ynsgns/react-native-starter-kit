@@ -23,7 +23,8 @@ function Input(props: InputProps) {
   return (
     <View style={[styles.container, containerStyle || {}]}>
       <Text style={isWhite ? styles.label_white : styles.label}>
-        {(inputValue && label && label) || ' '}
+        {/* {(inputValue && label && label) || ' '} */}
+        {label || ' '}
       </Text>
       <TextInput
         {...props}

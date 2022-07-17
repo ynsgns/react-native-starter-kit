@@ -22,7 +22,7 @@ function Label(props: LabelProps) {
     xxl,
   } = props || {}
   const textColor =
-    color || isError ? colors.error : isWhite ? colors.white : colors.black
+    color || (isError ? colors.error : isWhite ? colors.white : colors.black)
 
   const defaultFontWeight = bold ? 'bold' : fontWeight
   const textAlign = center ? 'center' : 'left'

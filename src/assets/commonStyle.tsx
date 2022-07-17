@@ -6,12 +6,27 @@ const commonStyle = StyleSheet.create({
     shadowColor: colors.grey,
     shadowOffset: {
       width: 0,
-      height: 12,
+      height: 8,
     },
-    shadowOpacity: 0.58,
+    shadowOpacity: 0.4,
     shadowRadius: 16.0,
 
-    elevation: 24,
+    elevation: 16,
+  },
+  shadow_top: {
+    shadowColor: colors.grey,
+    shadowOffset: {
+      width: 0,
+      height: -8,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 16.0,
+
+    elevation: 16,
+  },
+  center: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 })
 
