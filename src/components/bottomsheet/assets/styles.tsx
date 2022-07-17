@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   modalViewTop: {
     width: numbers.screen.width,
     alignItems: 'center',
+    marginTop: -35,
   },
   modalTopLine: {
     ...commonStyle.shadow,
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     height: 6,
     width: '40%',
     borderRadius: 10,
-    marginTop: -20,
+    marginTop: 10,
     marginBottom: 20,
   },
   modalTitle: {
