@@ -7,7 +7,7 @@ import {FormProps} from './assets/types'
 function Panel({children, title = ''}: FormProps) {
   return (
     <View style={styles.panel}>
-      {title && <Label title={title} xl bold />}
+      {title && <Label title={title} large bold style={styles.labe_style} />}
       {children}
     </View>
   )

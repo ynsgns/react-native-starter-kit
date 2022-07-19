@@ -41,7 +41,9 @@ function Select({
 
   return (
     <View style={styles.container}>
-      <Label title={title} color={colors.grey_dark} small />
+      <View style={styles.label_view}>
+        <Label title={title} />
+      </View>
       <Pressable style={styles.button} onPress={toggleModal}>
         <View style={styles.leftView}>
           <Label

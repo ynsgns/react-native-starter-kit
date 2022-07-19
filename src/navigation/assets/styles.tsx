@@ -3,14 +3,12 @@ import {colors, commonStyle} from '../../assets'
 
 const styles = StyleSheet.create({
   container: {
-    ...commonStyle.shadow,
-    paddingTop: Platform.OS === 'ios' ? 20 : 0, // only for IOS to give StatusBar Space
-    backgroundColor: colors.bg,
+    ...commonStyle.shadow_soft,
+    paddingTop: Platform.OS === 'ios' ? 20 : 0,
+    backgroundColor: colors.white,
     flexDirection: 'row',
-    alignItems: 'flex-end',
-    paddingBottom: 4,
+    alignItems: 'center',
     paddingHorizontal: 12,
-    height: 80,
   },
   flex1: {
     flex: 1,

@@ -13,8 +13,8 @@ function App() {
       screenOptions={{
         headerShown: false,
       }}>
-      <AppStack.Screen name="Login" component={LoginScreen} />
       <AppStack.Screen name="DrawerNavigation" component={DrawerNavigation} />
+      <AppStack.Screen name="Login" component={LoginScreen} />
     </AppStack.Navigator>
   )
 }

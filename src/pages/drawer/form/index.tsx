@@ -7,6 +7,9 @@ import styles from './assets/styles'
 
 function WelcomeScreen(): JSX.Element {
   const [pageLoading, setPageLoading] = useState<boolean>(true)
+  // React.useEffect(() => {
+  //   NativeModules.DevMenu.show()
+  // }, [])
 
   return (
     <Container>
@@ -19,8 +22,24 @@ function WelcomeScreen(): JSX.Element {
           <Input label="Name" />
           <Input label="Surname" />
           <Select title="Choose your favorite team" options={testOptionsList} />
-          <Button title="Button" />
         </Panel>
+        <Panel title="Example form title">
+          <Input label="Name" />
+          <Input label="Surname" />
+          <Select title="Choose your favorite team" options={testOptionsList} />
+        </Panel>
+        <Panel title="Example form title">
+          <Input label="Name" />
+          <Input label="Surname" />
+          <Select title="Choose your favorite team" options={testOptionsList} />
+        </Panel>
+        <Panel title="Example form title">
+          <Input label="Name" />
+          <Input label="Surname" />
+          <Select title="Choose your favorite team" options={testOptionsList} />
+        </Panel>
+
+        <Button title="Save" />
       </View>
     </Container>
   )

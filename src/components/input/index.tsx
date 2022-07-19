@@ -23,12 +23,9 @@ function Input(props: InputProps) {
   }
   return (
     <View style={[styles.container, containerStyle || {}]}>
-      <Label
-        title={label || ' '}
-        style={isWhite ? styles.label_white : {}}
-        small
-      />
-
+      <View style={styles.label_view}>
+        <Label title={label || ' '} style={isWhite ? styles.label_white : {}} />
+      </View>
       <TextInput
         {...props}
         placeholder={label}

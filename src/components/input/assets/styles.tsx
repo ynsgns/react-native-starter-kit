@@ -1,18 +1,24 @@
-import {StyleSheet} from 'react-native'
+import {Platform, StyleSheet} from 'react-native'
 import {colors, numbers} from '../../../assets'
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: numbers.padding.md,
+    marginTop: numbers.padding.l,
+  },
+  label_view: {
+    alignSelf: 'flex-start',
+    marginBottom: numbers.padding.s,
   },
   label_white: {
     color: colors.white,
   },
   input: {
+    zIndex: -1,
     borderWidth: 1,
     borderColor: colors.greySoft,
-    padding: numbers.padding.l,
     borderRadius: 4,
+    paddingHorizontal: 8,
+    height: Platform.OS === 'ios' ? 52 : 50,
   },
   input_white: {
     borderWidth: 1,

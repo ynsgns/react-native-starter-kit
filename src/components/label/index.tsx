@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, View} from 'react-native'
+import {Platform, Text, View} from 'react-native'
 import {colors, numbers} from '../../assets'
 import {LabelProps} from './assets/types'
 
@@ -25,7 +25,11 @@ function Label(props: LabelProps) {
   const textColor =
     color || (isError ? colors.error : isWhite ? colors.white : colors.black)
 
-  const defaultFontWeight = bold ? 'bold' : fontWeight
+  const defaultFontWeight = bold
+    ? Platform.OS === 'ios'
+      ? '600'
+      : 'bold'
+    : fontWeight
   const textAlign = center ? 'center' : 'left'
 
   const getFontSize = (): number => {

@@ -3,12 +3,15 @@ import {colors, commonStyle, numbers} from '../../../assets'
 
 const styles = StyleSheet.create({
   panel: {
-    ...commonStyle.shadow,
-    backgroundColor: colors.white,
+    ...commonStyle.shadow_soft,
     width: '100%',
-    padding: numbers.padding.l,
-    borderRadius: numbers.padding.l,
+    backgroundColor: colors.white,
+    padding: numbers.padding.xxl,
+    borderRadius: numbers.padding.md,
     marginVertical: numbers.padding.md,
+  },
+  labe_style: {
+    marginBottom: numbers.padding.s,
   },
 })
 
