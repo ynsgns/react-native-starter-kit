@@ -21,24 +21,8 @@ function WelcomeScreen(): JSX.Element {
         <Panel title="Example form title">
           <Input label="Name" />
           <Input label="Surname" />
-          <Select title="Choose your favorite team" options={testOptionsList} />
+          <Select title="Choose your city" options={testOptionsList} />
         </Panel>
-        <Panel title="Example form title">
-          <Input label="Name" />
-          <Input label="Surname" />
-          <Select title="Choose your favorite team" options={testOptionsList} />
-        </Panel>
-        <Panel title="Example form title">
-          <Input label="Name" />
-          <Input label="Surname" />
-          <Select title="Choose your favorite team" options={testOptionsList} />
-        </Panel>
-        <Panel title="Example form title">
-          <Input label="Name" />
-          <Input label="Surname" />
-          <Select title="Choose your favorite team" options={testOptionsList} />
-        </Panel>
-
         <Button title="Save" />
       </View>
     </Container>

@@ -31,19 +31,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-end',
   },
-  //
+  //renderItem
   renderItem_container: {
-    padding: numbers.padding.md,
-    // backgroundColor: 'blue',
+    marginBottom: 8,
+    justifyContent: 'center',
   },
   renderItem_button: {
+    paddingVertical: numbers.padding.l,
     flexDirection: 'row',
     alignItems: 'center',
-    // backgroundColor: 'red',
+    borderLeftWidth: 3,
+    borderTopLeftRadius: 3,
+    borderBottomLeftRadius: 4,
+    paddingLeft: 8,
   },
   renderItem_lines: {
-    backgroundColor: colors.greySoft_2,
-    marginTop: numbers.padding.s,
+    backgroundColor: '#eee',
     width: '100%',
     height: 1,
   },

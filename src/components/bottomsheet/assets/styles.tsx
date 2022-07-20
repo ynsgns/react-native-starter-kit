@@ -14,12 +14,15 @@ const styles = StyleSheet.create({
     width: numbers.screen.width,
   },
   modalView: {
-    ...commonStyle.shadow_top,
     width: numbers.screen.width,
     backgroundColor: 'white',
     alignItems: 'center',
     borderRadius: 20,
-    padding: 35,
+    borderTopWidth: 6,
+    borderTopColor: colors.greySoft_2,
+    paddingVertical: 35,
+    paddingBottom: 100,
+    paddingHorizontal: 20,
   },
   modalViewTop: {
     width: numbers.screen.width,
@@ -37,6 +40,7 @@ const styles = StyleSheet.create({
   },
   modalTitle: {
     fontSize: numbers.fontSize.l,
+    color: colors.black,
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',

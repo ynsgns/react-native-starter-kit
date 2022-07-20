@@ -36,7 +36,13 @@ function Select({
   }
 
   const renderItem = (item: ListRenderItemInfo<SelectOptionsType>) => {
-    return <RenderItem data={item} onSelectItem={onSelectItem} />
+    return (
+      <RenderItem
+        data={item}
+        onSelectItem={onSelectItem}
+        selectValue={selectValue}
+      />
+    )
   }
 
   return (
@@ -63,7 +69,11 @@ function Select({
         title={placeholder || title}
         isShow={isOpenModal}
         handleClosePress={modalCloseHandle}>
-        <FlatList data={options} renderItem={renderItem} />
+        <FlatList
+          data={options}
+          renderItem={renderItem}
+          showsVerticalScrollIndicator={false}
+        />
       </BottomSheet>
     </View>
   )

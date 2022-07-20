@@ -10,6 +10,7 @@ export type SelectPropsType = {
 
 export type RenderItemProps = {
   data: ListRenderItemInfo<SelectOptionsType>
+  selectValue: SelectOptionsType
   onSelectItem: (selectedItem: SelectOptionsType, index: number) => void
 }
 export type SelectOptionsType = {

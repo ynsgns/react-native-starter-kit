@@ -22,7 +22,7 @@ const commonStyle = StyleSheet.create({
     shadowOpacity: 0.4,
     shadowRadius: 16.0,
 
-    elevation: 16,
+    elevation: 7,
   },
   shadow_soft: {
     shadowColor: '#000',
