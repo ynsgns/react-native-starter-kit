@@ -10,6 +10,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  link_container: {
+    padding: 10,
+  },
   width100: {
     width: '100%',
   },

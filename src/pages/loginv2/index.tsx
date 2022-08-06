@@ -50,7 +50,6 @@ function LoginScreen({navigation}: LoginProps): JSX.Element {
             onChangeText={onChangePassword}
             value={password}
           />
-
           <Button
             title="Register"
             isLink

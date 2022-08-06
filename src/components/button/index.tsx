@@ -25,7 +25,10 @@ function Button(props: ButtonProps): JSX.Element {
   return (
     <View style={[isLink ? {} : styles.width100, containerStyle || {}]}>
       <TouchableOpacity
-        style={[styles.container, {borderRadius, backgroundColor}]}
+        style={[
+          isLink ? styles.link_container : styles.container,
+          {borderRadius, backgroundColor},
+        ]}
         activeOpacity={0.7}
         {...props}>
         <Label
