@@ -1,22 +1,38 @@
 import React from 'react'
-import {View} from 'react-native'
-import {TouchableOpacity} from 'react-native-gesture-handler'
+import {TouchableOpacity, View} from 'react-native'
 import {colors, numbers} from '../../assets'
 import Label from '../label'
 import styles from './assets/styles'
 import {ButtonProps} from './assets/types'
 
 function Button(props: ButtonProps): JSX.Element {
-  const {titleStyle, circle, center, bgColor} = props || {}
+  const {
+    titleStyle,
+    title,
+    circle,
+    textColor,
+    bgColor,
+    containerStyle,
+    isLink,
+    disabled,
+  } = props || {}
   const borderRadius = circle ? 99 : numbers.padding.md
-  const backgroundColor = bgColor || colors.cyan
+  const backgroundColor = isLink
+    ? colors.transparent
+    : bgColor || colors.cyan + (disabled ? '80' : '')
+  const txtColor = textColor || isLink ? colors.cyan : colors.white
 
   return (
-    <View style={center ? styles.alignCenter : {}}>
+    <View style={[isLink ? {} : styles.width100, containerStyle || {}]}>
       <TouchableOpacity
         style={[styles.container, {borderRadius, backgroundColor}]}
-        activeOpacity={0.7}>
-        <Label title="Button" isWhite {...titleStyle} />
+        activeOpacity={0.7}
+        {...props}>
+        <Label
+          title={title}
+          color={txtColor}
+          style={[isLink ? styles.link_title : {}, titleStyle]}
+        />
       </TouchableOpacity>
     </View>
   )

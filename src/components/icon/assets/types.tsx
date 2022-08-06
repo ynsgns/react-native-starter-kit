@@ -1,3 +1,5 @@
+import {ViewStyle} from 'react-native'
+
 export type IconProps = {
   iconType:
     | 'AntDesign'
@@ -14,6 +16,7 @@ export type IconProps = {
     | 'Zocial'
     | 'Fontisto'
   name: string
+  containerStyle?: ViewStyle
   color?: string
   borderColor?: string
   size?: number

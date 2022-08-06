@@ -21,6 +21,7 @@ function Icon(props: IconProps) {
     iconType,
     name,
     onPress,
+    containerStyle,
     disabled = false,
     color = colors.black,
     borderColor = colors.grey,
@@ -103,7 +104,10 @@ function Icon(props: IconProps) {
     <TouchableOpacity
       onPress={onPress}
       disabled={disable}
-      style={isCircle ? styles.container_circle : styles.container}>
+      style={[
+        isCircle ? styles.container_circle : styles.container,
+        containerStyle || {},
+      ]}>
       {renderIcon()}
     </TouchableOpacity>
   )

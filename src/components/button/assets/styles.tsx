@@ -10,7 +10,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  alignCenter: {alignItems: 'center'},
+  width100: {
+    width: '100%',
+  },
+  link_title: {
+    textDecorationLine: 'underline',
+  },
 })
 
 export default styles

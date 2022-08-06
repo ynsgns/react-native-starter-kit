@@ -2,6 +2,12 @@ import {StyleSheet} from 'react-native'
 import colors from './colors'
 
 const commonStyle = StyleSheet.create({
+  row: {
+    flexDirection: 'row',
+  },
+  flex1: {
+    flex: 1,
+  },
   shadow: {
     shadowColor: colors.grey,
     shadowOffset: {

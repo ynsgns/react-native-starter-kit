@@ -7,4 +7,5 @@ export type InputProps = {
   inputStyle?: TextStyle
   containerStyle?: ViewStyle
   isWhite?: boolean
+  isCircle?: boolean
 } & TextInputProps
